@@ -1,0 +1,44 @@
+#file: noinspection YAMLSchemaValidation
+es:
+  activerecord:
+    attributes:
+      curriculum:
+        name: Nombre
+        data: Datos
+        user_id: Creador
+        updated_at: Fecha modificación
+        created_at: Fecha creación
+    models:
+      area:
+        one: "Área de conocimiento"
+        other: "Áreas de conocimiento"
+      area_curriculum:
+        one: "Área de conocimiento por defecto"
+        other: "Áreas de conocimiento por defecto"
+      career:
+        one: Carrera
+        other: Carreras
+      course:
+        one: Curso
+        other: Cursos
+      curriculum:
+        one: Malla curricular
+        other: Mallas curriculares
+      curriculum_subject:
+        one: "Materia por defecto"
+        other: "Materias por defecto"
+      curriculum_type:
+        one: "Tipo de materia por defecto"
+        other: "Tipos de materia por defecto"
+      semester:
+        one: "Semestre"
+        other: "Semestres"
+      subject:
+        one: "Materia"
+        other: "Materias"
+      type:
+        one: "Tipo de materia"
+        other: "Tipos de materia"
+      room:
+        one: "Sala"
+        other: "Salas"

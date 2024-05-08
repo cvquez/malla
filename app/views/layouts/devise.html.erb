@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Malla</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "rails_admin/application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  </head>
+
+  <body>
+    <section class="h-100">
+      <div class="container h-100">
+        <div class="row justify-content-sm-center h-100">
+          <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+            <div class="text-center my-5">
+              <%=image_tag asset_path('logo.png'), width: 85, height: 85, alt: 'logo', class: 'object-fit-contain'%>
+            </div>
+            <div class="card shadow-lg">
+              <div class="card-body p-5 text-center">
+                <%= yield %>
+              </div>
+            </div>
+            <div class="text-center mt-5 text-muted">
+              <a href="https://www.linkedin.com/in/cristhiankvj/" target="_blank" class="text-decoration-none text-black">
+              Copyright &copy; 2023 &mdash; @cristhiankvj
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

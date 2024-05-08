@@ -1,0 +1,17 @@
+<%= form.hidden_field :data, :value => (form.object.data || form.object.data_default).to_json %>
+<div
+  style="position: relative; width: 100%; height: 400px;"
+  data-controller="fullscreen"
+>
+  <div id="myDiagramDiv" data-fullscreen-target="container"
+       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #DAE4E4;"></div>
+
+  <button
+    type="button"
+    class="btn position-absolute z-3 top-0 end-0"
+    data-action="click->fullscreen#toggleFullscreen"
+  >
+    <%= icon "fas", "expand" %>
+  </button>
+</div>
+<%#= render 'js' %>

@@ -1,0 +1,15 @@
+<h2><%= t(".forgot_your_password") %></h2>
+
+<%= simple_form_for resource, as: resource_name, url: password_path(resource_name), html: { method: :post }, wrapper: :login_vertical_form do |f| %>
+  <%= f.error_notification %>
+
+    <%= f.input :email,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "email" } %>
+  <div class="d-flex flex-wrap align-items-center">
+    <%= f.button :submit, t(".send_me_reset_password_instructions"), class: 'btn btn-primary ms-auto text-wrap' %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>

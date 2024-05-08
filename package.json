@@ -1,0 +1,36 @@
+{
+  "name": "app",
+  "private": "true",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo-rails": "^7.3.0",
+    "@popperjs/core": "^2.11.8",
+    "@rails/actioncable": "^7.1.1",
+    "autoprefixer": "^10.4.16",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.1",
+    "bootswatch": "^5.3.2",
+    "esbuild": "^0.19.5",
+    "gojs": "^3.0.1",
+    "nodemon": "^3.0.1",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "rails_admin": "^3.1.2",
+    "sass": "^1.69.4"
+  },
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=/assets",
+    "build:css:application:compile": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules",
+    "build:css:application:prefix": "postcss ./app/assets/builds/application.css --use=autoprefixer --output=./app/assets/builds/application.css",
+    "build:css:application": "yarn build:css:application:compile && yarn build:css:application:prefix",
+    "build:css:rails_admin:compile": "sass ./app/assets/stylesheets/rails_admin.scss:./app/assets/stylesheets/rails_admin/application.css --no-source-map --load-path=node_modules",
+    "build:css:rails_admin:prefix": "postcss ./app/assets/stylesheets/rails_admin/application.css --use=autoprefixer --output=./app/assets/stylesheets/rails_admin/application.css",
+    "build:css:rails_admin": "yarn build:css:rails_admin:compile && yarn build:css:rails_admin:prefix",
+    "watch:css": "nodemon --watch ./app/assets/stylesheets/ --ext scss --exec \"yarn build:css:application && yarn build:css:rails_admin\""
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}

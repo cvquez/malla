@@ -1,0 +1,13 @@
+<div class="text-center my-3">
+  <p><%=t('.sign_in_with_provider') %></p>
+  <%- if devise_mapping.omniauthable? %>
+    <%- resource_class.omniauth_providers.each do |provider| %>
+      <%= button_to omniauth_authorize_path(resource_name, provider), data: { turbo: false }, class: "btn btn-outline-primary btn-floating mx-1" do %>
+        <%= icon 'fa-brands', map_icons(provider), class: 'fa-beat-fade'%>
+      <% end %>
+    <% end %>
+  <% end %>
+  <div class="divider d-flex align-items-center justify-content-center my-4">
+    <p class="text-center fw-bold mx-3 mb-0">O</p>
+  </div>
+</div>

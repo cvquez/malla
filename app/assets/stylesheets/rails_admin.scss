@@ -1,0 +1,17 @@
+
+@import "bootswatch/dist/lux/variables";
+$fa-font-path: "/assets";
+@import "@fortawesome/fontawesome-free/scss/brands";
+@import "rails_admin/src/rails_admin/styles/base.scss";
+@import "bootswatch/dist/lux/bootswatch";
+
+
+@import 'bootstrap-icons/font/bootstrap-icons';
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
