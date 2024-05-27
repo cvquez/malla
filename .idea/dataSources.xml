@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="malla: production" uuid="cc34fd1c-fcd4-410e-af28-69edd917e680">
+    <data-source source="LOCAL" name="malla: production" uuid="bab26233-50ae-46d0-9a4a-b3cdeebb7267">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
@@ -10,7 +10,7 @@
       <jdbc-url>jdbc:postgresql://127.0.0.1:5432/malla_production</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="malla: development" uuid="bb406253-84e4-417e-ab3d-6ce12b5fbf31">
+    <data-source source="LOCAL" name="malla: development" uuid="ac9007d2-48b5-4c5c-be84-929a25a0bafc">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
@@ -19,7 +19,7 @@
       <jdbc-url>jdbc:postgresql://127.0.0.1:5432/malla_development</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="malla: test" uuid="0dfad732-5280-45d0-9a60-7c1147379f4c">
+    <data-source source="LOCAL" name="malla: test" uuid="5dd026e0-c0c4-44e7-b130-3c379feaf2eb">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
